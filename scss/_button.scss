@@ -1,0 +1,17 @@
+.button {
+	display: inline-block;
+	min-width: 100px;
+	padding: 8px 33px;
+	font-size: 14px;
+	line-height: 28px;
+	font-weight: 500;
+	color: $main-white;
+	background-image: $main-gradinet;
+	border-radius: $global-radius;
+	text-align: center;
+	text-decoration: none;
+
+	&:hover {
+		opacity: 0.4;
+	}
+}
