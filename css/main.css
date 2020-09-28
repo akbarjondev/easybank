@@ -27,6 +27,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Public Sans", "Arial", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -144,6 +145,10 @@ body {
   width: 100%;
 }
 
+.invite {
+  text-transform: capitalize;
+}
+
 .menu {
   position: absolute;
   right: 0;
@@ -226,6 +231,44 @@ body {
 }
 .site-main {
   padding-top: 80px;
+}
+
+.hero {
+  position: relative;
+  padding-top: 170px;
+  padding-bottom: 170px;
+  background-image: linear-gradient(to bottom, #fafafa, #ffffff);
+}
+
+.hero__container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.hero__heading {
+  max-width: 420px;
+  margin: 0;
+  padding-bottom: 24px;
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 100;
+  color: #2d314d;
+}
+
+.hero__text {
+  width: 450px;
+  margin: 0;
+  margin-bottom: 36px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #9597a5;
+}
+
+.hero__img {
+  position: absolute;
+  top: -72px;
+  right: -55px;
 }
 
 /*# sourceMappingURL=main.css.map */

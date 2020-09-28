@@ -1,0 +1,33 @@
+.hero {
+	position: relative;
+	padding-top: 170px;
+	padding-bottom: 170px;
+	background-image: linear-gradient(to bottom, #fafafa, #ffffff);
+}
+.hero__container {
+	display: flex;
+	align-items: flex-start;
+}
+.hero__heading {
+	max-width: 420px;
+	margin: 0;
+	padding-bottom: 24px;
+	font-size: 56px;
+	line-height: 64px;
+	font-weight: 100;
+	color: $main-black;
+}
+.hero__text {
+	width: 450px;
+	margin: 0;
+	margin-bottom: 36px;
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 400;
+	color: $main-gray;
+}
+.hero__img {
+	position: absolute;
+	top: -72px;
+	right: -55px;
+}
