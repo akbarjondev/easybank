@@ -70,6 +70,7 @@
 	&:hover {
 		color: $main-black;
 		cursor: pointer;
+		opacity: 0.8;
 		
 		&::after {
 			width: 100%;

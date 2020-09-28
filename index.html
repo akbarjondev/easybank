@@ -50,11 +50,14 @@
 				<div class="hero__container-left">
 					<h1 class="hero__heading">Next generation digital banking</h1>
 					<p class="hero__text">Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
-					<a href="#" class="hero__link button invite">Request invite</a>
+					<a href="#" class="hero__link button">Request invite</a>
 				</div>
 
 				<picture>
-					<img class="hero__img" src="img/bg-phone.png" alt="Online banking in illustration" width="820" height="908">
+					<source media="(max-width:1120px)" 
+									srcset="img/mb-phone.png 1x, img/mb-phone@2x.png 2x">
+
+					<img class="hero__img" src="img/bg-phone.png" srcset="img/bg-phone.png 1x, img/bg-phone@2x.png 2x" alt="Online banking in illustration" width="820" height="908">
 				</picture>
 			</div><!-- End of container -->
 		</section><!-- End of hero -->
