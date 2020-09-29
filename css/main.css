@@ -329,5 +329,120 @@ body {
     margin-top: 180px;
   }
 }
+.choose {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background-color: #f4f5f7;
+}
+
+.choose__heading {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 40px;
+  line-height: 64px;
+  font-weight: 100;
+  color: #2d314d;
+}
+
+.choose__text {
+  max-width: 635px;
+  margin-bottom: 72px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #9597a5;
+}
+
+.choose__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.choose__item {
+  display: flex;
+  flex-direction: column;
+  width: 255px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.choose__item::before {
+  content: "";
+  width: 72px;
+  height: 72px;
+  margin-bottom: 40px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cards::before {
+  background-image: url("../img/icon-cards.png"), linear-gradient(135deg, #33d35e 0%, #2ab6d9 99.58%);
+}
+
+.message::before {
+  background-image: url("../img/icon-message.png"), linear-gradient(135deg, #33d35e 0%, #2ab6d9 99.58%);
+}
+
+.onboarding::before {
+  background-image: url("../img/icon-onboarding.png"), linear-gradient(135deg, #33d35e 0%, #2ab6d9 99.58%);
+}
+
+.api::before {
+  background-image: url("../img/icon-api.png"), linear-gradient(135deg, #33d35e 0%, #2ab6d9 99.58%);
+}
+
+.choose__item-heading {
+  margin: 0;
+  margin-bottom: 26px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 100;
+  color: #2d314d;
+  letter-spacing: -0.43px;
+}
+
+.choose__item-text {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #9597a5;
+}
+
+@media only screen and (max-width: 1150px) {
+  .choose {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .choose__heading, .choose__text {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .choose__list {
+    justify-content: center;
+  }
+
+  .choose__item {
+    margin-bottom: 32px;
+  }
+
+  .choose__item-heading {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .choose__item {
+    align-items: center;
+    text-align: center;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

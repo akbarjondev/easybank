@@ -1,3 +1,9 @@
 @mixin transition($property: all, $seconds) {
 	transition: $property $seconds ease;
 }
+
+@mixin breakpoint-down($screen-size) {
+	@media only screen and (max-width: $screen-size) {
+		@content;
+	}
+}
