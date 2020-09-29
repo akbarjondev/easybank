@@ -630,4 +630,37 @@ body {
   color: #9597a5;
 }
 
+@media only screen and (max-width: 780px) {
+  .footer-left {
+    align-items: center;
+  }
+
+  .footer-left__logo {
+    margin-bottom: 32px;
+  }
+
+  .site-footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-footer__list {
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 200px;
+  }
+
+  .site-footer__item {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .footer-right {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
