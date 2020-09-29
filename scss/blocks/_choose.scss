@@ -64,6 +64,7 @@
 	font-weight: 100;
 	color: $main-black;
 	letter-spacing: -0.43px;
+	text-transform: capitalize;
 }
 .choose__item-text {
 	font-size: 16px;
@@ -97,5 +98,24 @@
 	.choose__item {
 		align-items: center;
 		text-align: center;
+	}
+}
+
+@include retina() {
+	.cards::before {
+		background-image: url("../img/icon-cards@2x.png"), $main-gradinet;
+		background-size: 40px auto, auto;
+	}
+	.message::before {
+		background-image: url("../img/icon-message@2x.png"), $main-gradinet;
+		background-size: 40px auto, auto;
+	}
+	.onboarding::before {
+		background-image: url("../img/icon-onboarding@2x.png"), $main-gradinet;
+		background-size: 40px auto, auto;
+	}
+	.api::before {
+		background-image: url("../img/icon-api@2x.png"), $main-gradinet;
+		background-size: 40px auto, auto;
 	}
 }
