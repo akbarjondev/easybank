@@ -50,6 +50,7 @@ body {
 }
 
 .button {
+  position: relative;
   display: inline-block;
   min-width: 100px;
   padding: 8px 33px;
@@ -61,9 +62,19 @@ body {
   border-radius: 22px;
   text-align: center;
   text-decoration: none;
+  overflow: hidden;
 }
-.button:hover {
-  opacity: 0.4;
+.button:hover::before {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .site-header {
@@ -308,8 +319,22 @@ body {
   .hero__container-left {
     margin-top: 300px;
   }
+
+  .hero__container-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__heading, .hero__text {
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 450px) {
+  .hero {
+    padding-bottom: 98px;
+  }
+
   .hero__container-left {
     margin-top: 250px;
   }
